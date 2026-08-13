@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>จองคลาส | NOTE Studio</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: #20303c; background: linear-gradient(135deg, #e7f7f5, #f7f4ef); line-height: 1.5; }
+    header { background: #102b36; color: white; padding: 18px 7%; display: flex; justify-content: space-between; align-items: center; }
+    header strong { letter-spacing: 2px; font-size: 1.3rem; }
+    header a { color: #79ddd6; text-decoration: none; }
+    main { max-width: 780px; margin: 45px auto; padding: 0 20px; }
+    .heading { text-align: center; margin-bottom: 28px; }
+    h1 { margin-bottom: 4px; font-size: 2.3rem; color: #0b7f79; }
+    form { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 30px rgba(24,52,63,.13); }
+    fieldset { border: 1px solid #d6e1e4; border-radius: 10px; padding: 20px; margin: 0 0 22px; }
+    legend { font-weight: bold; color: #0b7f79; padding: 0 8px; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 17px; }
+    label { display: block; font-weight: bold; font-size: .92rem; }
+    input, select, textarea { width: 100%; margin-top: 6px; padding: 11px; border: 1px solid #bdcbd0; border-radius: 7px; font: inherit; background: white; }
+    textarea { min-height: 95px; resize: vertical; }
+    .radio label, .confirm { display: block; font-weight: normal; margin: 8px 0; }
+    .radio input, .confirm input { width: auto; margin-right: 7px; }
+    button { width: 100%; border: 0; border-radius: 8px; padding: 13px; color: white; background: #ff6b4a; font-size: 1.05rem; font-weight: bold; cursor: pointer; }
+    button:hover { background: #e95738; }
+    footer { text-align: center; margin: 35px 0 22px; color: #586970; }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } form { padding: 20px; } }
+  </style>
+</head>
+<body>
+  <header><strong>NOTE STUDIO</strong><a href="index.html">← กลับไปหน้าคลาส</a></header>
+  <main>
+    <div class="heading"><h1>จองคลาสออกกำลังกาย</h1><p>กรอกข้อมูลด้านล่าง แล้วเตรียมพบกับคลาสที่ใช่สำหรับคุณ</p></div>
+    <form action="#" method="post" novalidate>
+      <fieldset>
+        <legend>1. ข้อมูลผู้จอง</legend>
+        <div class="grid">
+          <label>ชื่อ-นามสกุล<input type="text" name="fullname" required autocomplete="name"></label>
+          <label>หมายเลขโทรศัพท์<input type="tel" name="phone" required autocomplete="tel" placeholder="08x-xxx-xxxx"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email" placeholder="name@example.com"></label>
+          <label>อายุ<input type="number" name="age" required min="15" max="100" step="1"></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>2. ข้อมูลการจองคลาส</legend>
+        <div class="grid">
+          <label>คลาสออกกำลังกาย<select name="class" required><option value="">-- เลือกคลาส --</option><option>Sunrise Yoga</option><option>Core Pilates</option><option>Power Cycling</option><option>Functional Fit</option></select></label>
+          <label>วันที่ต้องการเข้าเรียน<input type="date" name="date" required></label>
+          <label>ช่วงเวลา<select name="time" required><option value="">-- เลือกเวลา --</option><option>09:00–10:30</option><option>10:30–12:00</option><option>13:00–14:30</option><option>16:00–17:30</option></select></label>
+        </div>
+        <div class="radio">
+          <p><strong>ระดับประสบการณ์ในการออกกำลังกาย</strong></p>
+          <label><input type="radio" name="experience" value="none" required>ไม่เคยเข้าคลาสมาก่อน</label>
+          <label><input type="radio" name="experience" value="some">มีประสบการณ์เล็กน้อย</label>
+          <label><input type="radio" name="experience" value="regular">ออกกำลังกายรูปแบบนี้เป็นประจำ</label>
+        </div>
+        <label>ข้อจำกัดในการออกกำลังกายหรือข้อความเพิ่มเติม<textarea name="notes" placeholder="เช่น อาการบาดเจ็บ หรือข้อมูลที่ผู้ฝึกสอนควรทราบ"></textarea></label>
+        <label class="confirm"><input type="checkbox" name="confirm" required>ข้าพเจ้ายืนยันว่าข้อมูลที่กรอกเป็นความจริง และเข้าใจว่าการส่งแบบฟอร์มนี้ยังไม่ถือเป็นการยืนยันสิทธิ์เข้าเรียน</label>
+      </fieldset>
+      <button type="submit">ส่งข้อมูลการจอง</button>
+    </form>
+  </main>
+  <footer>รหัสนิสิต: 6731312821 · Chotiwat Silarak</footer>
+  <script src="booking.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>คลาสออกกำลังกาย | NOTE Studio </title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; color: #20303c; background: #f4f7f8; line-height: 1.6; }
+    header { color: white; text-align: center; padding: 40px 20px; background-color: #08746f;}
+    nav { position: absolute; top: 0; left: 0; right: 0; padding: 18px 7%; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.4rem; font-weight: bold; letter-spacing: 2px; }
+    nav a { color: white; text-decoration: none; border: 1px solid black; padding: 8px 18px; border-radius: 24px; }
+    h1 { margin: 25px 0 5px; font-size: clamp(2.4rem, 6vw, 4.5rem); }
+    header p { font-size: 1.15rem; margin: 0; }
+    main { max-width: 1150px; margin: auto; padding: 55px 22px; }
+    .intro { text-align: center; max-width: 680px; margin: 0 auto 35px; }
+    .intro h2 { font-size: 2rem; margin-bottom: 5px; color: black; }
+    .classes { display: grid; grid-template-columns: repeat(auto-fit, minmax(235px, 1fr)); gap: 24px; }
+    .card { background: white; border-radius: 14px; overflow: hidden; }
+    .card img { width: 100%; height: 180px; object-fit: cover; display: block; }
+    .content { padding: 20px; }
+    .content h3 { margin: 0; font-size: 1.35rem; }
+    .level { display: inline-block; margin: 9px 0; padding: 3px 10px; background: #e1f7f5; color: #08746f; border-radius: 15px; font-size: .83rem; font-weight: bold; }
+    .details { color: #64727a; font-size: .92rem; margin: 8px 0 14px; }
+    .book { display: inline-block; color: white; background: #ff6b4a; text-decoration: none; padding: 9px 16px; border-radius: 7px; font-weight: bold; }
+    footer { text-align: right; color: #d7e3e6; background: #102b36; padding: 24px; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav><span class="logo">NOTE STUDIO</span><a href="booking.html">จองคลาส</a></nav>
+  </header>
+  <main>
+    <section class="intro">
+      <h2>คลาสของเรา</h2>
+      <p>เลือกการเคลื่อนไหวที่ใช่ แล้วเริ่มต้นดูแลร่างกายไปกับผู้ฝึกสอนมืออาชีพ</p>
+    </section>
+    <section class="classes">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=700&q=80" alt="ผู้หญิงกำลังฝึกโยคะ">
+        <div class="content"><h3>Sunrise Yoga</h3><span class="level">Beginner</span><p>ปลุกร่างกายอย่างอ่อนโยนด้วยท่าโยคะและการฝึกหายใจ เหมาะสำหรับทุกคน</p><p class="details">60 นาที · สูงสุด 16 คน</p><a class="book" href="booking.html">จองคลาส</a></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=700&q=80" alt="คลาสพิลาทิส">
+        <div class="content"><h3>Core Pilates</h3><span class="level">Intermediate</span><p>เสริมความแข็งแรงของแกนกลางลำตัว พร้อมพัฒนาสมดุลและบุคลิกภาพ</p><p class="details">50 นาที · สูงสุด 12 คน</p><a class="book" href="booking.html">จองคลาส</a></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1534258936925-c58bed479fcb?auto=format&fit=crop&w=700&q=80" alt="คลาสปั่นจักรยานในร่ม">
+        <div class="content"><h3>Power Cycling</h3><span class="level">Advanced</span><p>เร่งจังหวะหัวใจไปกับเสียงเพลง คลาสพลังสูงสำหรับผู้ที่ชอบความท้าทาย</p><p class="details">45 นาที · สูงสุด 20 คน</p><a class="book" href="booking.html">จองคลาส</a></div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=700&q=80" alt="การออกกำลังกายแบบฟังก์ชันนอล">
+        <div class="content"><h3>Functional Fit</h3><span class="level">Intermediate</span><p>ฝึกการเคลื่อนไหวทั่วร่างกาย เพิ่มทั้งพละกำลัง ความคล่องตัว และความทนทาน</p><p class="details">55 นาที · สูงสุด 14 คน</p><a class="book" href="booking.html">จองคลาส</a></div>
+      </article>
+    </section>
+  </main>
+  <footer>รหัสนิสิต: 6731312821 · Chotiwat Silarak</footer>
+</body>
+</html>
